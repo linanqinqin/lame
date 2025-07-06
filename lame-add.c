@@ -3,7 +3,7 @@
 extern int __vdso_lame_add(int x, int y);  // declare the vDSO function
 
 int main() {
-    int result = __vdso_lame_add(1, 3);
-    printf("lame_add(1,3) = %d\n", result);
+    int result = __vdso_lame_add(0, 0);
+    printf("lame_add = %x\n", result);
     return 0;
 }
