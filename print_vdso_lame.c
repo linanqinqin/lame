@@ -14,8 +14,5 @@ int main(void) {
     Elf64_Ehdr *vdso_base = (Elf64_Ehdr *)getauxval(AT_SYSINFO_EHDR);
     printf("vDSO base via auxv: %p\n", vdso_base);
 
-    // parse the ELF in memory to find sym->st_value,
-    printf("via auxv:    %p\n", vdso_base + sym->st_value);
-
     return 0;
 }
