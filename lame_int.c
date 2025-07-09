@@ -6,12 +6,12 @@ int main() {
     int result = __vdso_lame_add(0, 0);
     printf("lame_add = %x\n", result);
 
-    printf("About to invoke LAME interrupt (INT 22)\n");
+    printf("About to invoke LAME interrupt (INT 0x1F)\n");
 
     // Inline assembly to execute INT 0xF1
-    asm volatile ("int $22");
+    asm volatile ("int $0x1F");
 
-    printf("Returned from LAME interrupt (INT 22)\n");
+    printf("Returned from LAME interrupt (INT 0x1F)\n");
 
     return 0;
 }
