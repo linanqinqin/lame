@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
         printf("✓ LAME handler is working correctly!\n");
         return 0;
     } else {
-        printf("✗ FAILURE: Expected %lu, got %lu\n", INIT_VAL+1, counter);
+        printf("✗ FAILURE: Expected %lu, got %lu\n", expected, counter);
         printf("✗ LAME handler may not be working\n");
         return 1;
     }
