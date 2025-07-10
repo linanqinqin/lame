@@ -12,7 +12,7 @@ extern int __vdso_lame_add(int x, int y);  // declare the vDSO function
 
 static inline void trigger_lame(void)
 {
-    asm volatile("int $0xf1");
+    asm volatile("int $0x1f");
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
     printf("Set counter in r13 to: %lu\n", counter);
     
     /* Trigger the LAME interrupt */
-    printf("Triggering LAME interrupt (INT $0xF1)...\n");
+    printf("Triggering LAME interrupt (INT $0x1F)...\n");
     trigger_lame();
     
     /* Read the value back from r13 */
