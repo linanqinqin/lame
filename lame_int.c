@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     int result = __vdso_lame_add(0, 0);
     printf("lame_add = %x\n", result);
 
-    uint64_t counter = INIT_VAL;
+    uint64_t counter;
     
     printf("=== LAME Handler Test (Register-based) ===\n");
     
