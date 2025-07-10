@@ -5,7 +5,7 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 
-#define INIT_VAL = 99
+#define INIT_VAL 99
 
 extern volatile int lame_handler_count;
 extern int __vdso_lame_add(int x, int y);  // declare the vDSO function
