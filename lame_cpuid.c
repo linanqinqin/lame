@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 #include <sched.h>
+#include <stdint.h>  /* For uint64_t */
 
 /* Function to trigger LAME interrupt */
 static inline void trigger_lame(void) {
