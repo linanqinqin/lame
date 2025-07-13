@@ -8,7 +8,7 @@
 
 /* Function to trigger LAME interrupt */
 static inline void trigger_lame(void) {
-    asm volatile("int $0x1f" : : : "r13");
+    asm volatile("int $0x1f");
 }
 
 /* Function to get the returned value from r13 */
