@@ -1,4 +1,4 @@
-/* test_cpu_id.c */
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
