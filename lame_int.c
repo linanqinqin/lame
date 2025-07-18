@@ -1,6 +1,7 @@
 // lame_int.c
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
