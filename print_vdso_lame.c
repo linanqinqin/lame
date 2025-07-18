@@ -10,8 +10,8 @@ int main(void) {
     void *h = dlopen("linux-vdso.so.1", RTLD_NOW);
     void *sym = dlsym(h, "__vdso_lame_entry");
     printf("via dlsym:    __vdso_lame_entry = %p\n", sym);
-    sym = dlsym(h, "lame_handle_entry");
-    printf("via dlsym:    lame_handle_entry = %p\n", sym);
+    sym = dlsym(h, "lame_handle_array");
+    printf("via dlsym:    lame_handle_array = %p\n", sym);
 
     printf("via direct print: __vdso_lame_entry = %p\n", (void *)__vdso_lame_entry);
 
